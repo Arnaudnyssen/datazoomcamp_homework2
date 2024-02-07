@@ -10,8 +10,6 @@ if 'test' not in globals():
 @data_loader
 def load_data_from_api(*args, **kwargs):
 
-    url = 'https://github.com/DataTalksClub/nyc-tlc-data/releases/tag/green/download'
-    
     taxi_dtypes = {
                     'VendorID': pd.Int64Dtype(),
                     'passenger_count': pd.Int64Dtype(),
